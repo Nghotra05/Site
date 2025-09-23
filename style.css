@@ -375,9 +375,6 @@ figure{
     line-height: 1;
 }
 
-.feature{
-    width: calc(100% / 2);
-}
 
 h2 {
     display: block;
@@ -1186,11 +1183,15 @@ MOBILE RESPONSIVENESS ↓
         padding: 16px 32px;
     }
 
+    .feature {
+    width: calc(100% / 2);
+}
+
     .testimonials__description {
         width: calc(100% - 40%);
     }
 
-    start .container {
+    .start .container {
         padding-top: 5rem;
         padding-bottom: 5rem;
     }
@@ -1203,7 +1204,22 @@ MOBILE RESPONSIVENESS ↓
     #features .section__title, 
     #pricing .section__title {
         font-size: 48px;
-}
+    }   
+
+    .start__row {
+        flex-direction: column;
+    }
+
+    .start__title{
+        text-align: center;
+        width: 100%;
+        max-width: 512px;
+    }
+
+    .start__buttons {
+        width: auto;
+        margin-top: 24px;
+    }
 }
 
 @media(max-width: 768px) {
@@ -1250,6 +1266,7 @@ MOBILE RESPONSIVENESS ↓
         width: 100%;
         max-width: 384px;
     }
+
 
 }
 
@@ -1314,8 +1331,11 @@ MOBILE RESPONSIVENESS ↓
     }
 
     .feature {
-        width: calc(100% / 2);
+        width: 100%
     }
 
+    .start__title {
+        font-size: 24px;
+    }
 }
 
