@@ -1203,6 +1203,11 @@ MOBILE RESPONSIVENESS ↓
         width: auto;
         margin-top: 24px;
     }
+
+    #features .section__title, 
+    #pricing .section__title {
+        font-size: 48px;
+}
 }
 
 @media(max-width: 768px) {
@@ -1255,8 +1260,8 @@ MOBILE RESPONSIVENESS ↓
 @media (max-width: 640px) {
 
     #features
-    .section__title, #pricing
-    .section__title{
+    .section__title, 
+    #pricing {
         font-size: 36px;
     }
 
@@ -1310,6 +1315,10 @@ MOBILE RESPONSIVENESS ↓
         flex-direction: column;
         align-items: center;
         text-align: center;
+    }
+
+    .feature {
+        width: calc(100%2);
     }
 
 }
