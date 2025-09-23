@@ -1105,6 +1105,29 @@ MOBILE RESPONSIVENESS ↓
     }
 }
 
+@media (min-width: 1025px) {
+    .btn__menu {
+        display: none;
+    }
+    nav ul {
+        display: flex;
+        gap: 32px
+    }
+    header .row {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        align-items: left;
+    }
+
+    .header__description,
+    .header__img--wrapper{
+        width: 100%;
+        max-width: 512px;
+        margin: 0 auto;
+    }
+}
+
 @media (max-width: 1024px) {
 
     .nav__links{
@@ -1131,6 +1154,25 @@ MOBILE RESPONSIVENESS ↓
         flex-direction: column;
         align-items: center;
     }
+
+    #features .section__title, 
+    #pricing .section__title {
+        font-size: 36px;
+    }
+
+    .features {
+        max-width: 768px;   
+    }
+
+     .feature {
+        width: calc(50%);
+    }
+
+    .feature__row {
+        padding: 32px 8px;
+        margin: 0 16px;
+    }
+
     footer {
         padding: 80px 32px;
     }
@@ -1199,6 +1241,15 @@ MOBILE RESPONSIVENESS ↓
         max-width: 448px;
     }
 
+    .features {
+        justify-content: center;
+    }
+
+    feature {
+        width: 100%;
+        max-width: 384px;
+    }
+
 }
 
 @media (max-width: 640px) {
@@ -1236,44 +1287,30 @@ MOBILE RESPONSIVENESS ↓
         line-height: 1.5;
     }
 
-    start .container {
+    .start .container {
         padding-top: 5rem;
         padding-bottom: 5rem;
     }
 
-    start__buttons {
+    .start__buttons {
         flex-direction: column;
     }
 
-}
+    #features .section__title, 
+    #pricing .section__title {
+        font-size: 36px;
+    }
 
-@media (max-width: 1024px) {
-    .feature {
-        width: calc(50%);
+    .feature__text {
+        margin-left: 0px;
+        margin-top: 16px;
     }
-}
 
-@media (min-width: 1025px) {
-    .btn__menu {
-        display: none;
-    }
-    nav ul {
-        display: flex;
-        gap: 32px
-    }
-    header .row {
-        flex-direction: row;
-        justify-content: space-between;
+    .feature__row {
+        flex-direction: column;
         align-items: center;
-        align-items: left;
+        text-align: center;
     }
 
-    .header__description,
-    .header__img--wrapper{
-        width: 100%;
-        max-width: 512px;
-        margin: 0 auto;
-    }
 }
-
 
